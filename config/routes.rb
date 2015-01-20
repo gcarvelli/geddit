@@ -4,6 +4,24 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  root 'frontpage#index'
+
+  # subgeddit routing
+  resources :subgeddits
+  #get 'g/' => 'subgeddits#index', as: :subgeddits
+  #post 'g/' => 'subgeddits#create'
+  #get 'g/'
+  #get 'g/:id' => 'subgeddits#show' as: :subgeddit
+
+  # post routing
+  resources :posts
+  #get 'posts/:id/upvote' => 'posts#upvote'
+  #get 'posts/:id/downvote' => 'posts#downvote'
+  post 'posts/:id/upvote' => 'posts#upvote'
+  post 'posts/:id/downvote' => 'posts#downvote'
+
+  # users routing
+  resources :users
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

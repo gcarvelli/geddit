@@ -1,0 +1,36 @@
+body {
+    background-color: white;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    font-size:16px;
+    background-color: #D4D4D4;
+}
+
+div#banner {
+    background-color: #C2E0FF;
+    height: 50px;
+    width: 100%;
+}
+
+div#header {
+    float: right;
+    background-color: #DCF8FF;
+    width: 400px;
+}
+
+div#logo {
+    height: 50px;
+}
+
+div#content {
+    margin-right: 250px;
+}
+
+div#sidebar {
+    right: 0;
+    background-color: #D6F5FF;
+    width: 250px;
+    height: 1000px;
+    position: absolute;
+}

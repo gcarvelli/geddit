@@ -1,0 +1,52 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div#post {
+    padding-left: 20px;
+}
+
+div#post_header {
+    background-color: white;
+    padding: 15px;
+}
+
+p#post_text {
+    background-color: #E8E8E8;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #D4D4D4;
+    padding: 5px;
+    width: inherit;
+}
+
+div#post_list {
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+
+div#post_list_item {
+    padding: 5px 10px 5px 10px;
+    height: 50px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+div#post_list_item_scorediv {
+    font-size: 20px;
+    float: left;
+    padding-right: 10px;
+    height: 100%;
+}
+
+p#post_list_item_row1 {
+    padding: 0;
+    line-height: 6px;
+}
+
+p#post_list_item_row2 {
+    padding: 0;
+    line-height: 6px;
+    font-size: 8pt;
+}

@@ -1,0 +1,2 @@
+module SubgedditsHelper
+end

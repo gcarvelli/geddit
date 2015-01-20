@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+
+post1:
+  title: My favorite duck ever
+  slug: my_favorite_duck_ever
+  link: http://www.whateats.com/wp-content/uploads/2010/04/duck-jaroslav-novak.jpt_.jpg
+  text: This duck is seriously the best thing since Betty White.
+  user: jedi870
+  subgeddit: ducks
+  upvotes: 10
+  downvotes: 1
+
+post2:
+  title: DAE like some good cheese pizza?
+  slug: DAE_like_some_good_cheese_pizza
+  link: http://vmpcares.files.wordpress.com/2012/04/cheese-pizza.jpg
+  text: I like cheese pizza more than life itself.
+  user: killermonkey50
+  subgeddit: pizza
+  upvotes: 7
+  downvotes: 4

@@ -1,0 +1,5 @@
+<div id="post_list">
+    <% @posts.each_with_index do |post, index| %>
+        <%= render partial: 'posts/list_item', locals: {post: post, index: index} %>
+    <% end %>
+</div>

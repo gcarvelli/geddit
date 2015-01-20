@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Geddit</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <title>geddit: the front page of gio's internet</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+    <div id="banner">
+        <div id="header">
+            user logged in, preferences, etc.
+        </div>
+        <div id="logo">
+            <%= link_to image_tag('general/geddit_logo_small.png'), root_path %>
+        </div>
+    </div>
+    <div id="sidebar">
+        <%= yield :aside %>
+    </div>
+    <div id="content">
+        <%= yield %>
+    </div>
+   
 </body>
 </html>

@@ -1,0 +1,5 @@
+posts index page
+
+<% @posts.each do |post| %>
+    <p><%= link_to post.title, post %> <%= score_string(post) %></p>
+<% end %>
