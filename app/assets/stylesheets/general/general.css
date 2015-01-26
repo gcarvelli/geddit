@@ -7,30 +7,35 @@ body {
     background-color: #D4D4D4;
 }
 
-div#banner {
+div {
+    display: block;
+}
+
+#banner {
     background-color: #C2E0FF;
     height: 50px;
     width: 100%;
 }
 
-div#header {
+#header {
     float: right;
     background-color: #DCF8FF;
     width: 400px;
 }
 
-div#logo {
+#logo {
     height: 50px;
 }
 
-div#content {
-    margin-right: 250px;
+#content {
+    margin-right: 270px;
+    width: 100%;
 }
 
-div#sidebar {
-    right: 0;
+#sidebar {
+    float: right;
     background-color: #D6F5FF;
     width: 250px;
-    height: 1000px;
-    position: absolute;
+    height: 400px;
+    padding: 10px;
 }

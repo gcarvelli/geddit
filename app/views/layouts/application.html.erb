@@ -16,9 +16,9 @@
         </div>
     </div>
     <div id="sidebar">
-        <%= yield :aside %>
+        <%= render 'layouts/sidebar' %>
     </div>
-    <div id="content">
+    <div id="content" role="main">
         <%= yield %>
     </div>
    

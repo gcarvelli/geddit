@@ -2,16 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-div#post {
+.post {
     padding-left: 20px;
+    padding-bottom: 10px;
 }
 
-div#post_header {
-    background-color: white;
+.post_header {
+    background-color: #white;
     padding: 15px;
 }
 
-p#post_text {
+.post_text {
     background-color: #E8E8E8;
     border-style: solid;
     border-radius: 3px;
@@ -21,31 +22,37 @@ p#post_text {
     width: inherit;
 }
 
-div#post_list {
-    width: 100%;
+.post_list {
     padding: 0px 10px 0px 10px;
 }
 
-div#post_list_item {
+.post_list_item {
     padding: 5px 10px 5px 10px;
     height: 50px;
     background-color: white;
     border-radius: 2px;
+    margin: 0;
+
 }
 
-div#post_list_item_scorediv {
+.post_list_item_scorediv {
     font-size: 20px;
     float: left;
     padding-right: 10px;
     height: 100%;
 }
 
-p#post_list_item_row1 {
+.post_list_item_row1 {
     padding: 0;
-    line-height: 6px;
+    line-spacing: 5px;
 }
 
-p#post_list_item_row2 {
+.post_list_item_sub {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.post_list_item_row2 {
     padding: 0;
     line-height: 6px;
     font-size: 8pt;

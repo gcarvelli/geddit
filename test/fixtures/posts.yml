@@ -23,3 +23,15 @@ post2:
   subgeddit: pizza
   upvotes: 7
   downvotes: 4
+
+<% 10.times do |index| %>
+testpost<%= index %>:
+  title: test post <%= index %> please ignore
+  slug: test-post-<%= index %>
+  link: http://example.com
+  text: test post please ignore
+  user: killermonkey50
+  subgeddit: ducks
+  upvotes: 6
+  downvotes: 3
+<% end %>
