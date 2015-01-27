@@ -1,0 +1,18 @@
+
+<%= form_for(@post) do |f| %>
+    <div class="form_item">
+        <%= f.label :title, 'title' %>
+        <%= f.text_area :title, rows:2, cols:50 %>
+    </div>
+    <div class="form_item">
+        <%= f.label :link, 'link' %>
+        <%= f.text_field :link, size:47 %>
+    </div>
+    <div class="form_item">
+        <%= f.label :text, 'text (optional)' %>
+        <%= f.text_area :text, rows:3, cols:50 %>
+    </div>
+    <div>
+        <%= f.submit 'submit' %>
+    </div>
+<% end %>

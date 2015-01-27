@@ -1,0 +1,40 @@
+#form_container {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 285px;
+    padding: 0 0 5px 10px;
+    position: relative;
+}
+
+.form_item {
+    margin:0 0 15px 0;
+    background-color: #C2E0FF;
+    padding: 5px;
+    border-radius: 3px;
+    display: table;
+    position: relative;
+    min-width: 375px;
+}
+
+form label {
+    display: block;
+    font-style: italic;
+}
+
+form input {
+    padding: 5px;
+}
+
+div#errors {
+    color: #900;
+    font-weight: bold;
+}
+
+form div.field_with_errors {
+    margin-bottom: 0;
+}
+
+form div.field_with_errors label {
+    color: #900;
+    font-weight: bold;
+}
