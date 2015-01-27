@@ -1,0 +1,36 @@
+#sidebar {
+    float: right;
+    background-color: #D6F5FF;
+    width: 250px;
+    height: 400px;
+    padding: 10px;
+}
+
+#login_box {
+    border: 1px solid gray;
+    padding: 2px;
+}
+
+#user_username {
+    width: 105px;
+    display: inline-block;
+}
+
+#user_password {
+    width: 105px;
+    display: inline-block;
+}
+
+a.new_post_link {
+    text-decoration: none;
+    /* text-decoration: none; only works if it is on the a tag */
+}
+
+.new_post_link {
+    background-color: white;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin-top: 10px;
+    color: black;
+    width: 250px;
+}
