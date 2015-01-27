@@ -36,23 +36,6 @@ h1 {
     width: 100%;
 }
 
-#sidebar {
-    float: right;
-    background-color: #D6F5FF;
-    width: 250px;
-    height: 400px;
-    padding: 10px;
-}
-
-a.new_post_link {
-    text-decoration: none;
-}
-
-.new_post_link {
-    background-color: white;
-    text-align: center;
-    padding: 10px 0 10px 0;
-    margin-top: 10px;
-    color: black;
-    width: 250px;
+input[type=text] {
+    
 }
