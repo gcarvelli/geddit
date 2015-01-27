@@ -5,8 +5,8 @@ class CreatePosts < ActiveRecord::Migration
       t.string :link
       t.string :slug
       t.string :text
-      t.integer :upvotes
-      t.integer :downvotes
+      t.integer :upvotes, null: false, default: 0
+      t.integer :downvotes, null: false, default: 0
       t.integer :user_id
       t.integer :subgeddit_id
       t.timestamps null: false
