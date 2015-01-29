@@ -7,18 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    <div id="banner">
-        <div id="header">
-            <% if user_signed_in? %>
-                <%= link_to 'logout', destroy_user_session_path, method: :delete %>
-            <% else %>
-                You are not signed in.
-            <% end %>
-        </div>
-        <div id="logo">
-            <%= link_to image_tag('general/geddit_logo_small.png'), root_path %>
-        </div>
-    </div>
+    <%= render partial: 'layouts/banner' %>
     <div id="sidebar">
         <%= render 'layouts/sidebar' %>
     </div>

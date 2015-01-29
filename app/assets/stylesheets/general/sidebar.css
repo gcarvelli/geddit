@@ -11,7 +11,7 @@
     padding: 2px;
 }
 
-#user_username {
+#user_email {
     width: 105px;
     display: inline-block;
 }
@@ -19,6 +19,10 @@
 #user_password {
     width: 105px;
     display: inline-block;
+}
+
+input[name=commit] {
+    
 }
 
 a.new_post_link {

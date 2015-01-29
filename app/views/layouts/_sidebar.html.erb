@@ -2,7 +2,7 @@
 <% if !user_signed_in? %>
 <div id="login_box">
     <%= form_for(:user, url: session_path(:user)) do |f| %>
-        <%= f.text_field :username, placeholder: 'username' %>
+        <%= f.text_field :email, placeholder: 'email' %>
         <%= f.password_field :password, placeholder: 'password' %>
         <%= f.submit 'login' %>
     <% end %> 
