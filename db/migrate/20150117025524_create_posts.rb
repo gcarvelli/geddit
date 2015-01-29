@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration
     create_table :posts do |t|
       t.string :title
       t.string :link
-      t.string :slug
+      t.string :slug, unique: true
       t.string :text
       t.integer :upvotes, null: false, default: 0
       t.integer :downvotes, null: false, default: 0
