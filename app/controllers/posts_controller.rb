@@ -5,7 +5,11 @@ class PostsController < ApplicationController
     end
 
     def show
-        @post = Post.find(params[:id])
+        if Post.find_by(id: params[:id]) != nil
+            @post = Post.find_by(id: params[:id])
+        elsif Post.find_by(slug: params[:id]) != nil
+            @post = Post.find_by(slug: params[:id])
+        end
     end
 
     def new

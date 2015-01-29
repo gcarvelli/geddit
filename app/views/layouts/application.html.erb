@@ -10,7 +10,7 @@
     <div id="banner">
         <div id="header">
             <% if user_signed_in? %>
-                <%= current_user %>
+                <%= link_to 'logout', destroy_user_session_path, method: :delete %>
             <% else %>
                 You are not signed in.
             <% end %>

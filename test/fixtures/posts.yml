@@ -27,7 +27,7 @@ post2:
 <% 10.times do |index| %>
 testpost<%= index %>:
   title: test post <%= index %> please ignore
-  slug: test-post-<%= index %>
+  slug: test_post_<%= index %>
   link: http://example.com
   text: test post please ignore
   user: killermonkey50

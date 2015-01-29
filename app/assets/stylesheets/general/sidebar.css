@@ -34,3 +34,7 @@ a.new_post_link {
     color: black;
     width: 250px;
 }
+
+.new_post_link:hover {
+    background-color: #C2E0FF;
+}

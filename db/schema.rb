@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 20150120183110) do
     t.integer  "user_id"
     t.integer  "post_id"
     t.integer  "comment_id"
-    t.integer  "upvotes",    null: false
-    t.integer  "downvotes",  null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "upvotes",    default: 0, null: false
+    t.integer  "downvotes",  default: 0, null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "posts", force: :cascade do |t|
@@ -29,12 +29,12 @@ ActiveRecord::Schema.define(version: 20150120183110) do
     t.string   "link"
     t.string   "slug"
     t.string   "text"
-    t.integer  "upvotes",      null: false
-    t.integer  "downvotes",    null: false
+    t.integer  "upvotes",      default: 0, null: false
+    t.integer  "downvotes",    default: 0, null: false
     t.integer  "user_id"
     t.integer  "subgeddit_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "subgeddits", force: :cascade do |t|

@@ -3,7 +3,7 @@
 <%= post.score %>
 </div>
 <div class="post_list_item_contentdiv">
-<p class="post_list_item_row1"><%= link_to post.title, post.link %> <%= score_string(post) %> <span class="post_list_item_user">by <%= link_to post.user.link_text, post.user %> </span><span class="post_list_item_sub">to <%= link_to post.subgeddit.link_text, post.subgeddit %></span></p>
-<p class="post_list_item_row2"><%= link_to "comments", post %></p>
+<p class="post_list_item_row1"><%= link_to post.title, post.link %> <%= score_string(post) %> <span class="post_list_item_user">by <%= link_to post.user.link_text, post.user %> </span><span class="post_list_item_sub">to <%= link_to post.subgeddit.link_text, post.subgeddit.pretty_link %></span></p>
+<p class="post_list_item_row2"><%= link_to "comments", post.pretty_link %></p>
 </div>
 </div>

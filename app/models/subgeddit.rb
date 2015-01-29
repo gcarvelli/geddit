@@ -10,6 +10,10 @@ class Subgeddit < ActiveRecord::Base
         "/g/#{name}"
     end
 
+    def pretty_link
+        "/subgeddits/#{name}"
+    end
+
     def to_s
         link_text
     end

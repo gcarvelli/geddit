@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
   # post routing
   resources :posts
+  #get 'posts/:id' => 'posts#show'
   #get 'posts/:id/upvote' => 'posts#upvote'
   #get 'posts/:id/downvote' => 'posts#downvote'
   post 'posts/:id/upvote' => 'posts#upvote'
