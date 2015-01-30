@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root 'frontpage#index'
+  get 'top/' => 'frontpage#top'
+  get 'new/' => 'frontpage#new'
+  get 'rising/' => 'frontpage#rising'
+  get 'controversial/' => 'frontpage#controversial'
 
   # subgeddit routing
   resources :subgeddits

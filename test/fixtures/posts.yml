@@ -32,6 +32,6 @@ testpost<%= index %>:
   text: test post please ignore
   user: killermonkey50
   subgeddit: ducks
-  upvotes: 6
-  downvotes: 3
+  upvotes: <%= rand(10) + 5 %>
+  downvotes: <%= rand(5) + 1 %>
 <% end %>
