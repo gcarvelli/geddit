@@ -1,15 +1,21 @@
 
 <%= form_for(@post) do |f| %>
     <div class="form_item">
-        <%= f.label :title, 'title' %>
+        <div>
+            <span id="post_title_label">title</span>
+            <span id="title_char_count">0/300</span>
+        </div>
         <%= f.text_area :title, rows:2, cols:50 %>
     </div>
     <div class="form_item">
-        <%= f.label :link, 'link' %>
+        <span id="post_link_label">link</span>
         <%= f.text_field :link, size:47 %>
     </div>
     <div class="form_item">
-        <%= f.label :text, 'text (optional)' %>
+        <div>
+            <span id="post_text_label">text</span>
+            <span id="text_char_count">0/15000</span>
+        </div>
         <%= f.text_area :text, rows:3, cols:50 %>
     </div>
     <div>

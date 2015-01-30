@@ -32,7 +32,6 @@
     background-color: white;
     border-radius: 2px;
     margin: 0;
-
 }
 
 .post_list_item_scorediv {
@@ -61,4 +60,39 @@
     padding: 0;
     line-height: 6px;
     font-size: 8pt;
+}
+
+/* new post form */
+
+#post_title_label {
+    width: 50%;
+    font-size: 20px;
+}
+
+#post_link_label {
+    display: block;
+    font-size: 20px;
+}
+
+#post_text_label {
+    width: 50%;
+    font-size: 20px;
+}
+
+.post_input {
+    font-size: 18px;
+}
+
+#title_char_count {
+    width: 50%;
+    float: right;
+    text-align: right;
+    color: gray;
+}
+
+#text_char_count {
+    width: 50%;
+    float: right;
+    text-align: right;
+    color: gray;
 }
