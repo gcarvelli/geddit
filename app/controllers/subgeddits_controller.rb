@@ -1,7 +1,7 @@
 class SubgedditsController < ApplicationController
 
     def index
-
+        @subgeddits = Subgeddit.all.order(:name)
     end
 
     def show
