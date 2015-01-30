@@ -3,3 +3,9 @@
         <%= render partial: 'posts/list_item', locals: {post: post, index: index} %>
     <% end %>
 </div>
+
+<% content_for(:subgeddit_sidebar_block) do %>
+    <div id="subgeddit_sidebar_content">
+        <%= @subgeddit.description %>
+    </div>
+<% end %>

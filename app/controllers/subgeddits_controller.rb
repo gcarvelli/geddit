@@ -6,11 +6,11 @@ class SubgedditsController < ApplicationController
 
     def show
         if Subgeddit.all.find_by(id: params[:id]) != nil
-            @sub = Subgeddit.all.find_by(id: params[:id])
+            @subgeddit = Subgeddit.all.find_by(id: params[:id])
         elsif Subgeddit.all.find_by(name: params[:id]) != nil
-            @sub = Subgeddit.all.find_by(name: params[:id])
+            @subgeddit = Subgeddit.all.find_by(name: params[:id])
         end
 
-        @posts = @sub.posts
+        @posts = @subgeddit.posts
     end
 end
