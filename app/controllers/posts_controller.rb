@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+    before_filter :authenticate_user!, only: [:new]
+
     def index
         @posts = Post.all.sort_by { |post| post.score }.reverse
     end
@@ -19,12 +21,12 @@ class PostsController < ApplicationController
     def create
         @post = Post.new(params[:post].permit(:title, :link, :text))
         @post.upvotes = @post.downvotes = 0
+        @post.user = current_user
         #<temp>
         @post.subgeddit = Subgeddit.first
-        @post.user = User.first
         #</temp>
         if @post.save
-            redirect_to @post
+            redirect_to @post.pretty_link
         else
             render 'new'
         end
