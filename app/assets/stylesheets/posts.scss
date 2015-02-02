@@ -39,6 +39,13 @@
     float: left;
     padding-right: 10px;
     height: 100%;
+    min-width: 30px;
+    display: table;
+}
+
+.score {
+    vertical-align: middle;
+    display: table-cell;
 }
 
 .post_list_item_row1 {

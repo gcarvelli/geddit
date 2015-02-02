@@ -1,6 +1,6 @@
 <div class="post_list_item">
 <div class="post_list_item_scorediv">
-<%= post.score %>
+<span class="score"><%= post.score %></span>
 </div>
 <div class="post_list_item_contentdiv">
 <p class="post_list_item_row1"><%= link_to post.title, post.link %> <%= score_string(post) %> <span class="post_list_item_user">submitted <%= time_ago_in_words post.created_at %> ago by <%= link_to post.user, post.user %> </span><span class="post_list_item_sub">to <%= link_to post.subgeddit.link_text, post.subgeddit.pretty_link %></span></p>
