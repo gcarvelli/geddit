@@ -8,6 +8,10 @@ class User < ActiveRecord::Base
     has_many :comments
     has_many :subgeddits
 
+    def to_param
+        username
+    end
+
     def link_text
         "/u/#{username}"
     end

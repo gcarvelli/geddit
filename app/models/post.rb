@@ -19,12 +19,13 @@ class Post < ActiveRecord::Base
         logger.info "link after: #{link}"
     end
 
-    def score
-        upvotes - downvotes
+    # Override for route helper methods (link_to, user_path)
+    def to_param
+        slug
     end
 
-    def pretty_link
-        "/posts/#{slug}"
+    def score
+        upvotes - downvotes
     end
 
 end
