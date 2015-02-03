@@ -25,6 +25,7 @@ h1 {
 
 #banner ul {
     display: inline-block;
+    padding: 0px;
 }
 
 #banner ul a {
@@ -57,11 +58,12 @@ h1 {
 #logo {
     height: 50px;
     display: inline-block;
+    padding-right: 25px;
 }
 
 #subgeddit_link {
     display: inline-block;
-    padding: 0px;
+    padding-right: 10px;
     margin: 0px;
 }
 
