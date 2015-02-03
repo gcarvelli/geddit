@@ -59,6 +59,23 @@ h1 {
     display: inline-block;
 }
 
+#subgeddit_link {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+
+#subgeddit_link a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#subgeddit_link a:hover {
+    text-decoration: underline;
+}
+
 #content {
     margin-right: 270px;
     width: 100%;

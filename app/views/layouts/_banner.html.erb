@@ -9,6 +9,11 @@
     <span id="logo">
         <%= link_to image_tag('general/geddit_logo_small.png'), root_path %>
     </span>
+    <% if @subgeddit %>
+        <span id="subgeddit_link">
+            <%= link_to @subgeddit.name.upcase, @subgeddit %>
+        </span>
+    <% end %>
     <ul>
         <a href="/"><li id="hot" <%= active 'index' %>>hot</li></a>
         <a href="/top"><li id="top" <%= active 'top' %>>top</li></a>

@@ -12,6 +12,7 @@ class PostsController < ApplicationController
         elsif Post.find_by(slug: params[:id]) != nil
             @post = Post.find_by(slug: params[:id])
         end
+        @subgeddit = @post.subgeddit
     end
 
     def new
