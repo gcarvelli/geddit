@@ -35,17 +35,29 @@
 }
 
 .post_list_item_scorediv {
-    font-size: 18px;
+    font-size: 12px;
     float: left;
     padding-right: 10px;
     height: 100%;
     min-width: 30px;
     display: table;
+    text-align: center;
+}
+
+.post_list_item_scorediv_row1 {
+    height: 33%;
+}
+
+.post_list_item_scorediv_row2 {
+    height: 33%;
+}
+
+.post_list_item_scorediv_row3 {
+    height: 33%;
 }
 
 .score {
     vertical-align: middle;
-    display: table-cell;
 }
 
 .post_list_item_row1 {
