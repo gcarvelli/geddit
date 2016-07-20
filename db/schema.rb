@@ -25,16 +25,16 @@ ActiveRecord::Schema.define(version: 20150120183110) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.string   "title"
+    t.string   "title",        limit: 300
     t.string   "link"
     t.string   "slug"
-    t.string   "text"
-    t.integer  "upvotes",      default: 0, null: false
-    t.integer  "downvotes",    default: 0, null: false
+    t.text     "text",         limit: 15000
+    t.integer  "upvotes",                    default: 0, null: false
+    t.integer  "downvotes",                  default: 0, null: false
     t.integer  "user_id"
     t.integer  "subgeddit_id"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
   end
 
   create_table "subgeddits", force: :cascade do |t|

@@ -27,7 +27,7 @@ class PostsController < ApplicationController
         @post.subgeddit = Subgeddit.first
         #</temp>
         if @post.save
-            redirect_to @post.pretty_link
+            redirect_to @post
         else
             render 'new'
         end

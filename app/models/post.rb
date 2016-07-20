@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-    
+
     belongs_to :user
     belongs_to :subgeddit
 
@@ -7,13 +7,13 @@ class Post < ActiveRecord::Base
     validates :text, length: { maximum: 15000 }
     validates :link, presence: true
 
-    before_validation(on: :create) do 
+    before_validation(on: :create) do
         self.slug = title.parameterize("_")
 
         logger.info "link before: #{link}"
 
         if link.to_s == ""
-            self.link = pretty_link
+            self.link = self.slug
         end
 
         logger.info "link after: #{link}"
